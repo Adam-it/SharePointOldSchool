@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{c3cfa963-3882-4578-8ce5-bb7ba56e0bba}"
+        Type="Lookup"
+				DisplayName="SimpleLookupColumn"
+        Name="SimpleLookupColumn"
+				Required="TRUE"
+				List="Lists/ElementList1"
+				ShowField="SimpleTextColumn1"
+				Group="TestColumns"
+				UnlimitedLengthInDocumentLibrary="FALSE">
+  </Field>
+</Elements>

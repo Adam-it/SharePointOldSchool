@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.28307.852
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldsListsContentTypes", "FieldsListsContentTypes\FieldsListsContentTypes.csproj", "{54EE30BE-92A6-4D75-AB51-8EBE335786BC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{CBF7D2E1-D799-4EC3-A572-842D3C8C0649}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\GetListViewSchemaXml.ps1 = Scripts\GetListViewSchemaXml.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

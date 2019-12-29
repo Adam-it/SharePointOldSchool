@@ -55,13 +55,40 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ContentTypes\ElementContentType1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{06703da6-c716-4292-ab13-b8e8b4509c99}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\ElementContentType2\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f03dff9a-6fde-4690-9058-914e5a6b5f45}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\FileContentType1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f8ae8c6c-3379-407a-a9c2-00f1d465247c}</SharePointProjectItemId>
+    </None>
     <None Include="Features\FieldsListsContentTypes\FieldsListsContentTypes.feature">
       <FeatureId>{a274edce-f904-419f-8c1d-cdb9be92ddc9}</FeatureId>
+    </None>
+    <None Include="Fields\CalculatedColumns\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{94a932e1-826b-4daf-a8ec-f43af2f283b1}</SharePointProjectItemId>
     </None>
     <None Include="Fields\Columns\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{2be45a77-76b1-41fd-9277-00b71bc7a79a}</SharePointProjectItemId>
     </None>
+    <None Include="Fields\LookupColumns\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9128f747-223f-4834-9ed5-e82502c18941}</SharePointProjectItemId>
+    </None>
     <None Include="key.snk" />
+    <None Include="ListAndLibs\DocLib1\DocLib1Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{428bfbb8-798e-4780-99cc-4f9210b43f64}</SharePointProjectItemId>
+    </None>
+    <None Include="ListAndLibs\DocLib1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fc4996d2-c62b-4a0f-b91a-5882a4e38679}</SharePointProjectItemId>
+    </None>
+    <None Include="ListAndLibs\ElementList1\ElementList1Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{36ce3c69-fd72-43d9-b748-162b3b013ddd}</SharePointProjectItemId>
+    </None>
+    <None Include="ListAndLibs\ElementList1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{af54c562-0fe5-4bec-86a9-b16f1becde1d}</SharePointProjectItemId>
+    </None>
     <None Include="Package\Package.package">
       <PackageId>{21d5b6fc-582e-4184-9e5f-85bde5be12d9}</PackageId>
     </None>
@@ -69,15 +96,29 @@
       <DependentUpon>Package.package</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="ContentTypes\" />
-    <Folder Include="ListAndLibs\" />
-  </ItemGroup>
-  <ItemGroup>
+    <Content Include="ContentTypes\ElementContentType1\Elements.xml" />
+    <Content Include="ContentTypes\ElementContentType2\Elements.xml" />
+    <Content Include="ContentTypes\FileContentType1\Elements.xml" />
     <Content Include="Features\FieldsListsContentTypes\FieldsListsContentTypes.Template.xml">
       <DependentUpon>FieldsListsContentTypes.feature</DependentUpon>
     </Content>
+    <Content Include="Fields\CalculatedColumns\Elements.xml" />
     <Content Include="Fields\Columns\Elements.xml" />
+    <Content Include="Fields\LookupColumns\Elements.xml" />
+    <Content Include="ListAndLibs\DocLib1\DocLib1Instance\Elements.xml" />
+    <Content Include="ListAndLibs\DocLib1\EditDlg.htm" />
+    <Content Include="ListAndLibs\DocLib1\Elements.xml" />
+    <Content Include="ListAndLibs\DocLib1\FileDlg.htm" />
+    <Content Include="ListAndLibs\DocLib1\Repair.aspx" />
+    <Content Include="ListAndLibs\DocLib1\Schema.xml" />
+    <Content Include="ListAndLibs\DocLib1\Upload.aspx" />
+    <Content Include="ListAndLibs\ElementList1\ElementList1Instance\Elements.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ListAndLibs\ElementList1\Elements.xml" />
+    <Content Include="ListAndLibs\ElementList1\Schema.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <!-- Nie zmieniaj wartości poniższego atrybutu Name. Jeśli atrybut nie pasuje do nazwy folderu elementu projektu List, podczas uruchamiania projektu wystąpi błąd. -->
+    <ListTemplate
+        Name="ElementList1"
+        Type="100"
+        BaseType="0"
+        OnQuickLaunch="TRUE"
+        SecurityBits="11"
+        Sequence="410"
+        DisplayName="ElementList1"
+        Description="Moja definicja listy"
+        Image="/_layouts/15/images/itgen.png"/>
+</Elements>

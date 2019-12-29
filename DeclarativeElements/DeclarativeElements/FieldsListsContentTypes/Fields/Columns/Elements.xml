@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <!-- text fields -->
   <Field
        ID="{217a2768-2b5e-4c04-835f-80bd1ba3a150}"
@@ -74,6 +74,16 @@
       Decimals="3"
       Group="TestColumns">
   </Field>
+  <Field
+       ID="{378183fe-d509-4dad-972c-371fe1c6bd86}"
+       Name="SimpleNumberColumnMinMax"
+       DisplayName="SimpleNumberColumnMinMax"
+       Type="Number"
+       Required="FALSE"
+       Min="2"
+       Max="5"
+       Group="TestColumns">
+  </Field>
   <!-- note fields-->
   <Field
       ID="{a4e8b7c3-3565-4f0b-baaf-78713981a26e}"
@@ -114,8 +124,93 @@
       Group="TestColumns">
   </Field>
   <!-- date fields-->
+  <Field
+      ID="{2fe8f8ed-8233-49ae-ba93-46f3caa8f493}"
+      Name="SimpleDateTimeColumnDateOnly"
+      DisplayName="SimpleDateTimeColumnDateOnly"
+      Type="DateTime"
+      Format="DateOnly"
+      Required="FALSE"
+      Group="TestColumns">
+    <Default>[today]</Default>
+  </Field>
+  <Field
+      ID="{105806fe-a554-4b08-8ca0-3b9466f98a36}"
+      Name="SimpleDateTimeColumn1"
+      DisplayName="SimpleDateTimeColumn1"
+      Type="DateTime"
+      Required="FALSE"
+      Group="TestColumns">
+  </Field>
   <!-- choice fields-->
-  <!-- lookup fields-->
-  <!-- calculated fields-->
+  <Field ID="{2f22b50f-9a21-4b0c-b66a-3d9670d31746}"
+          Name="SimpleChoiceColumnDropdown"
+          DisplayName="SimpleChoiceColumnDropdown"
+          Type="Choice"
+          Required="FALSE"
+          Format="Dropdown"
+          Group="TestColumns">
+    <CHOICES>
+      <CHOICE>Choice1</CHOICE>
+      <CHOICE>Choice2</CHOICE>
+      <CHOICE>Choice3</CHOICE>
+      <CHOICE>Choice4</CHOICE>
+    </CHOICES>
+  </Field>
+  <Field ID="{27b974ec-9f54-45a4-af44-aa7e427f0f72}"
+          Name="SimpleChoiceColumnRadioButtons"
+          DisplayName="SimpleChoiceColumnRadioButtons"
+          Type="Choice"
+          Required="FALSE"
+          Format="RadioButtons"
+          Group="TestColumns">
+    <CHOICES>
+      <CHOICE>Choice1</CHOICE>
+      <CHOICE>Choice2</CHOICE>
+      <CHOICE>Choice3</CHOICE>
+      <CHOICE>Choice4</CHOICE>
+    </CHOICES>
+  </Field>
+  <Field ID="{02817240-a5eb-4169-a689-8cebf4592665}"
+          Name="SimpleChoiceColumnMultiChoice"
+          DisplayName="SimpleChoiceColumnMultiChoice"
+          Type="MultiChoice"
+          Required="FALSE"
+          Group="TestColumns">
+    <CHOICES>
+      <CHOICE>Choice1</CHOICE>
+      <CHOICE>Choice2</CHOICE>
+      <CHOICE>Choice3</CHOICE>
+      <CHOICE>Choice4</CHOICE>
+    </CHOICES>
+  </Field>
   <!-- user or group fields-->
+  <Field
+      ID="{e9dab41d-f75d-4f4a-a58f-bf3f2d553cf4}"
+      Name="SimpleUserColumnSingle"
+      DisplayName="SimpleUserColumnSingle"
+      Type="User"
+      Required="FALSE"
+      UserSelectionMode="0"
+      Group="TestColumns">
+  </Field>
+  <Field
+      ID="{02f49d7a-c0a5-4abe-9ef7-e03a68065a27}"
+      Name="SimpleUserColumnSingleUserAndGroup"
+      DisplayName="SimpleUserColumnSingleUserAndGroup"
+      Type="User"
+      Required="FALSE"
+      UserSelectionMode="1"
+      Group="TestColumns">
+  </Field>
+  <Field
+      ID="{7b4741c1-beb8-4cd5-bc42-af715deeb45d}"
+      Name="SimpleUserColumnMultiUserAndGroup"
+      DisplayName="SimpleUserColumnMultiUserAndGroup"
+      Type="UserMulti"
+      Mult="TRUE"
+      Required="FALSE"
+      UserSelectionMode="1"
+      Group="TestColumns">
+  </Field>
 </Elements>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{113496ff-384f-45f3-bc52-5df77b78b690}"
+       Name="FirstNumber"
+       DisplayName="FirstNumber"
+       Type="Number"
+       Required="FALSE"
+       Group="TestColumns">
+  </Field>
+  <Field
+       ID="{baeda2aa-075b-4c53-92a6-b21b4ecdd8bd}"
+       Name="SecondNumber"
+       DisplayName="SecondNumber"
+       Type="Number"
+       Required="FALSE"
+       Group="TestColumns">
+  </Field>
+  <!-- calculated fields-->
+  <Field
+    ID="{f61c8125-58bd-475a-bf22-9b509b058a3e}"
+    Type="Calculated"
+    ResultType="Number"
+    Name="SimpleCalculatedColumns1"
+    DisplayName="SimpleCalculatedColumns1"
+    Group="TestColumns">
+    <FieldRefs>
+      <FieldRef Name="FirstNumber" />
+      <FieldRef Name="SecondNumber" />
+    </FieldRefs>
+    <Formula>=[FirstNumber]+[SecondNumber]</Formula>
+  </Field>
+</Elements>

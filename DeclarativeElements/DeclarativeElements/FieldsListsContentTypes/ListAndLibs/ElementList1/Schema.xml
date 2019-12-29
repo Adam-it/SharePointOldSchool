@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="ElementList1" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/ElementList1" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      <ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef>
+      <ContentTypeRef ID="0x0120" />
+      <ContentType ID="0x0100227CC4225A164975B84A4F7F99FD12D3" Name="Element Content Type 1" Group="TestContentType" Description="Element Content Type 1" Inherits="TRUE" Version="0">
+        <FieldRefs>
+          <FieldRef ID="{2f22b50f-9a21-4b0c-b66a-3d9670d31746}" DisplayName="SimpleChoiceColumnDropdown" Required="FALSE" Name="SimpleChoiceColumnDropdown" Format="Dropdown" />
+          <FieldRef ID="{02817240-a5eb-4169-a689-8cebf4592665}" DisplayName="SimpleChoiceColumnMultiChoice" Required="FALSE" Name="SimpleChoiceColumnMultiChoice" />
+          <FieldRef ID="{27b974ec-9f54-45a4-af44-aa7e427f0f72}" DisplayName="SimpleChoiceColumnRadioButtons" Required="FALSE" Name="SimpleChoiceColumnRadioButtons" Format="RadioButtons" />
+          <FieldRef ID="{105806fe-a554-4b08-8ca0-3b9466f98a36}" DisplayName="SimpleDateTimeColumn1" Required="FALSE" Name="SimpleDateTimeColumn1" />
+          <FieldRef ID="{2fe8f8ed-8233-49ae-ba93-46f3caa8f493}" DisplayName="SimpleDateTimeColumnDateOnly" Required="FALSE" Name="SimpleDateTimeColumnDateOnly" Format="DateOnly" />
+          <FieldRef ID="{a4e8b7c3-3565-4f0b-baaf-78713981a26e}" DisplayName="SimpleNoteColumn1" Required="FALSE" Name="SimpleNoteColumn1" />
+          <FieldRef ID="{925e4c43-4dd6-46c3-909a-f31969c29ce1}" DisplayName="SimpleNoteColumnFullHtml" Required="FALSE" Name="SimpleNoteColumnFullHtml" />
+          <FieldRef ID="{d2b8aaf8-aeaf-43cc-87df-8ec7f1c77a72}" DisplayName="SimpleNumberColumn1" Required="FALSE" Name="SimpleNumberColumn1" />
+          <FieldRef ID="{217a2768-2b5e-4c04-835f-80bd1ba3a150}" DisplayName="SimpleTextColumn1" Required="FALSE" Name="SimpleTextColumn1" />
+        </FieldRefs>
+      </ContentType>
+      <ContentType ID="0x0100DBB36BFF0AFA41E2A7C83A2B5AC39507" Name="Element Content Type 2" Group="TestContentType" Description="Element Content Type 2" Inherits="TRUE" Version="0">
+        <FieldRefs>
+          <FieldRef ID="{217a2768-2b5e-4c04-835f-80bd1ba3a150}" DisplayName="SimpleTextColumn1" Required="FALSE" Name="SimpleTextColumn1" />
+          <FieldRef ID="{59d7abf7-14ab-45a6-8635-50828c101189}" DisplayName="SimpleTextColumnMaxLength20" Required="FALSE" Name="SimpleTextColumnMaxLength20" />
+          <FieldRef ID="{e892d9f1-128e-4826-9016-c1334b3fe573}" DisplayName="SimpleTextColumnNoNewForm" Required="FALSE" Name="SimpleTextColumnNoNewForm" ShowInDisplayForm="TRUE" ShowInEditForm="TRUE" ShowInNewForm="FALSE" />
+          <FieldRef ID="{045c0c67-c4bd-4c5e-bbc5-b023d61addab}" DisplayName="SimpleTextColumnNotDeletable" Required="FALSE" Name="SimpleTextColumnNotDeletable" />
+          <FieldRef ID="{a0242d2a-be59-4d4b-9f89-3f2cd8ed837f}" DisplayName="SimpleTextColumnNotFilterable" Required="FALSE" Name="SimpleTextColumnNotFilterable" Filterable="FALSE" />
+          <FieldRef ID="{f27b012d-c054-4006-b1ff-0c734770a85c}" DisplayName="SimpleTextColumnReadOnly" Required="FALSE" Name="SimpleTextColumnReadOnly" ReadOnly="TRUE" />
+        </FieldRefs>
+      </ContentType>
+    </ContentTypes>
+    <Fields>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field ID="{2f22b50f-9a21-4b0c-b66a-3d9670d31746}" Name="SimpleChoiceColumnDropdown" DisplayName="SimpleChoiceColumnDropdown" Type="Choice" Required="FALSE" Format="Dropdown" Group="TestColumns">
+        <CHOICES>
+          <CHOICE>Choice1</CHOICE>
+          <CHOICE>Choice2</CHOICE>
+          <CHOICE>Choice3</CHOICE>
+          <CHOICE>Choice4</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field ID="{02817240-a5eb-4169-a689-8cebf4592665}" Name="SimpleChoiceColumnMultiChoice" DisplayName="SimpleChoiceColumnMultiChoice" Type="MultiChoice" Required="FALSE" Group="TestColumns">
+        <CHOICES>
+          <CHOICE>Choice1</CHOICE>
+          <CHOICE>Choice2</CHOICE>
+          <CHOICE>Choice3</CHOICE>
+          <CHOICE>Choice4</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field ID="{27b974ec-9f54-45a4-af44-aa7e427f0f72}" Name="SimpleChoiceColumnRadioButtons" DisplayName="SimpleChoiceColumnRadioButtons" Type="Choice" Required="FALSE" Format="RadioButtons" Group="TestColumns">
+        <CHOICES>
+          <CHOICE>Choice1</CHOICE>
+          <CHOICE>Choice2</CHOICE>
+          <CHOICE>Choice3</CHOICE>
+          <CHOICE>Choice4</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field ID="{105806fe-a554-4b08-8ca0-3b9466f98a36}" Name="SimpleDateTimeColumn1" DisplayName="SimpleDateTimeColumn1" Type="DateTime" Required="FALSE" Group="TestColumns"></Field>
+      <Field ID="{2fe8f8ed-8233-49ae-ba93-46f3caa8f493}" Name="SimpleDateTimeColumnDateOnly" DisplayName="SimpleDateTimeColumnDateOnly" Type="DateTime" Format="DateOnly" Required="FALSE" Group="TestColumns">
+        <Default>[today]</Default>
+      </Field>
+      <Field ID="{a4e8b7c3-3565-4f0b-baaf-78713981a26e}" Name="SimpleNoteColumn1" DisplayName="SimpleNoteColumn1" Type="Note" Required="FALSE" RichText="TRUE" Group="TestColumns"></Field>
+      <Field ID="{925e4c43-4dd6-46c3-909a-f31969c29ce1}" Name="SimpleNoteColumnFullHtml" DisplayName="SimpleNoteColumnFullHtml" Type="Note" Required="FALSE" RichText="TRUE" RichTextMode="FullHtml" Group="TestColumns"></Field>
+      <Field ID="{d2b8aaf8-aeaf-43cc-87df-8ec7f1c77a72}" Name="SimpleNumberColumn1" DisplayName="SimpleNumberColumn1" Type="Number" Required="FALSE" Group="TestColumns"></Field>
+      <Field ID="{217a2768-2b5e-4c04-835f-80bd1ba3a150}" Name="SimpleTextColumn1" DisplayName="SimpleTextColumn1" Type="Text" Required="TRUE" Group="TestColumns"></Field>
+      <Field ID="{59d7abf7-14ab-45a6-8635-50828c101189}" Name="SimpleTextColumnMaxLength20" DisplayName="SimpleTextColumnMaxLength20" Type="Text" Required="TRUE" MaxLength="20" Group="TestColumns"></Field>
+      <Field ID="{e892d9f1-128e-4826-9016-c1334b3fe573}" Name="SimpleTextColumnNoNewForm" DisplayName="SimpleTextColumnNoNewForm" Type="Text" Required="FALSE" ShowInNewForm="FALSE" ShowInDisplayForm="TRUE" ShowInEditForm="TRUE" Group="TestColumns"></Field>
+      <Field ID="{045c0c67-c4bd-4c5e-bbc5-b023d61addab}" Name="SimpleTextColumnNotDeletable" DisplayName="SimpleTextColumnNotDeletable" Type="Text" Required="FALSE" AllowDeletion="FALSE" Group="TestColumns"></Field>
+      <Field ID="{a0242d2a-be59-4d4b-9f89-3f2cd8ed837f}" Name="SimpleTextColumnNotFilterable" DisplayName="SimpleTextColumnNotFilterable" Type="Text" Required="FALSE" Filterable="FALSE" Group="TestColumns"></Field>
+      <Field ID="{f27b012d-c054-4006-b1ff-0c734770a85c}" Name="SimpleTextColumnReadOnly" DisplayName="SimpleTextColumnReadOnly" Type="Text" Required="FALSE" ReadOnly="TRUE" Group="TestColumns"></Field>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+
+
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="FALSE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="SimpleChoiceColumnDropdown" />
+          <FieldRef Name="SimpleChoiceColumnMultiChoice" />
+          <FieldRef Name="SimpleChoiceColumnRadioButtons" />
+          <FieldRef Name="SimpleDateTimeColumn1" />
+          <FieldRef Name="SimpleDateTimeColumnDateOnly" />
+          <FieldRef Name="SimpleNoteColumn1" />
+          <FieldRef Name="SimpleNoteColumnFullHtml" />
+          <FieldRef Name="SimpleNumberColumn1" />
+          <FieldRef Name="SimpleTextColumn1" />
+          <FieldRef Name="SimpleTextColumnMaxLength20" />
+          <FieldRef Name="SimpleTextColumnNoNewForm" />
+          <FieldRef Name="SimpleTextColumnNotDeletable" />
+          <FieldRef Name="SimpleTextColumnNotFilterable" />
+          <FieldRef Name="SimpleTextColumnReadOnly" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+
+
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="2" Name="06fdb8a4-966e-4ee6-bbc9-7dfdc19201f7" DisplayName="CustomView" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="CustomView.aspx" DefaultView="TRUE">
+        <RowLimit>5</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Edit" />
+          <FieldRef Name="ID" />
+          <FieldRef Name="SimpleChoiceColumnDropdown" />
+          <FieldRef Name="SimpleChoiceColumnMultiChoice" />
+          <FieldRef Name="SimpleChoiceColumnRadioButtons" />
+          <FieldRef Name="SimpleDateTimeColumn1" />
+          <FieldRef Name="SimpleDateTimeColumnDateOnly" />
+          <FieldRef Name="SimpleNoteColumn1" />
+          <FieldRef Name="SimpleNoteColumnFullHtml" />
+          <FieldRef Name="SimpleNumberColumn1" />
+          <FieldRef Name="SimpleTextColumn1" />
+          <FieldRef Name="SimpleTextColumnMaxLength20" />
+          <FieldRef Name="SimpleTextColumnNoNewForm" />
+          <FieldRef Name="SimpleTextColumnNotDeletable" />
+          <FieldRef Name="SimpleTextColumnNotFilterable" />
+          <FieldRef Name="SimpleTextColumnReadOnly" />
+          <FieldRef Name="Title" />
+          <FieldRef Name="Created" />
+          <FieldRef Name="Author" />
+          <FieldRef Name="Modified" />
+          <FieldRef Name="Editor" />
+        </ViewFields>
+        <Query />
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+      </View>
+      <View BaseViewID="3" Name="61d0ccf1-2758-4838-87fa-27e0cd6c4d2a" DisplayName="CustomView1" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="CustomView1.aspx">
+        <ViewFields>
+          <FieldRef Name="ID" />
+          <FieldRef Name="DocIcon" />
+          <FieldRef Name="LinkTitleNoMenu" />
+          <FieldRef Name="SimpleTextColumn1" />
+          <FieldRef Name="SimpleNoteColumn1" />
+        </ViewFields>
+        <Query>
+          <GroupBy Collapse="TRUE" GroupLimit="30">
+            <FieldRef Name="Author" />
+          </GroupBy>
+          <OrderBy>
+            <FieldRef Name="ID" />
+          </OrderBy>
+          <Where>
+            <Or>
+              <Eq>
+                <FieldRef Name="Title" />
+                <Value Type="Text">A</Value>
+              </Eq>
+              <Eq>
+                <FieldRef Name="Title" />
+                <Value Type="Text">B</Value>
+              </Eq>
+            </Or>
+          </Where>
+        </Query>
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>
