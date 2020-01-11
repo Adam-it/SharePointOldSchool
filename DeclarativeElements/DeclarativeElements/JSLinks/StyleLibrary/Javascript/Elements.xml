@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Javascript" Url="Style Library">
+    <File Path="Javascript\JsLink1.js" Url="Javascript/JsLink1.js" Type="GhostableInLibrary" ReplaceContent="True"/>
+    <File Path="Javascript\JsLink2.js" Url="Javascript/JsLink2.js" Type="GhostableInLibrary" ReplaceContent="True"/>
+  </Module>
+</Elements>

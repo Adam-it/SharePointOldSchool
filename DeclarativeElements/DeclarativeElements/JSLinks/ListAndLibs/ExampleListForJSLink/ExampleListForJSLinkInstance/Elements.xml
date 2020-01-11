@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Example List for JSLink" OnQuickLaunch="TRUE" TemplateType="100" Url="Lists/ExampleListForJSLink" Description=""></ListInstance>
+</Elements>

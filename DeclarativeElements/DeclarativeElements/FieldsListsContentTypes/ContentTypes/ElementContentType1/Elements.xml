@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Typ zawartości elementu nadrzędnego: Element (0x01) -->
+  <ContentType ID="0x0100227CC4225A164975B84A4F7F99FD12D3" Name="Element Content Type 1" Group="TestContentType" Description="Element Content Type 1" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{2f22b50f-9a21-4b0c-b66a-3d9670d31746}" DisplayName="SimpleChoiceColumnDropdown" Required="FALSE" Name="SimpleChoiceColumnDropdown" Format="Dropdown" />
+      <FieldRef ID="{02817240-a5eb-4169-a689-8cebf4592665}" DisplayName="SimpleChoiceColumnMultiChoice" Required="FALSE" Name="SimpleChoiceColumnMultiChoice" />
+      <FieldRef ID="{27b974ec-9f54-45a4-af44-aa7e427f0f72}" DisplayName="SimpleChoiceColumnRadioButtons" Required="FALSE" Name="SimpleChoiceColumnRadioButtons" Format="RadioButtons" />
+      <FieldRef ID="{105806fe-a554-4b08-8ca0-3b9466f98a36}" DisplayName="SimpleDateTimeColumn1" Required="FALSE" Name="SimpleDateTimeColumn1" />
+      <FieldRef ID="{2fe8f8ed-8233-49ae-ba93-46f3caa8f493}" DisplayName="SimpleDateTimeColumnDateOnly" Required="FALSE" Name="SimpleDateTimeColumnDateOnly" Format="DateOnly" />
+      <FieldRef ID="{a4e8b7c3-3565-4f0b-baaf-78713981a26e}" DisplayName="SimpleNoteColumn1" Required="FALSE" Name="SimpleNoteColumn1" />
+      <FieldRef ID="{925e4c43-4dd6-46c3-909a-f31969c29ce1}" DisplayName="SimpleNoteColumnFullHtml" Required="FALSE" Name="SimpleNoteColumnFullHtml" />
+      <FieldRef ID="{d2b8aaf8-aeaf-43cc-87df-8ec7f1c77a72}" DisplayName="SimpleNumberColumn1" Required="FALSE" Name="SimpleNumberColumn1" />
+      <FieldRef ID="{217a2768-2b5e-4c04-835f-80bd1ba3a150}" DisplayName="SimpleTextColumn1" Required="FALSE" Name="SimpleTextColumn1" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

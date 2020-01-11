@@ -1,0 +1,1 @@
+- GetListViewSchemaXml.ps1 - this script may be helpful to get schema xml of view from a list that was created manually

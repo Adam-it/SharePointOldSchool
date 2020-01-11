@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Typ zawartości elementu nadrzędnego: Element (0x01) -->
+  <ContentType ID="0x0100DBB36BFF0AFA41E2A7C83A2B5AC39507" Name="Element Content Type 2" Group="TestContentType" Description="Element Content Type 2" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{217a2768-2b5e-4c04-835f-80bd1ba3a150}" DisplayName="SimpleTextColumn1" Required="FALSE" Name="SimpleTextColumn1" />
+      <FieldRef ID="{59d7abf7-14ab-45a6-8635-50828c101189}" DisplayName="SimpleTextColumnMaxLength20" Required="FALSE" Name="SimpleTextColumnMaxLength20" />
+      <FieldRef ID="{e892d9f1-128e-4826-9016-c1334b3fe573}" DisplayName="SimpleTextColumnNoNewForm" Required="FALSE" Name="SimpleTextColumnNoNewForm" ShowInDisplayForm="TRUE" ShowInEditForm="TRUE" ShowInNewForm="FALSE" />
+      <FieldRef ID="{045c0c67-c4bd-4c5e-bbc5-b023d61addab}" DisplayName="SimpleTextColumnNotDeletable" Required="FALSE" Name="SimpleTextColumnNotDeletable" />
+      <FieldRef ID="{a0242d2a-be59-4d4b-9f89-3f2cd8ed837f}" DisplayName="SimpleTextColumnNotFilterable" Required="FALSE" Name="SimpleTextColumnNotFilterable" Filterable="FALSE" />
+      <FieldRef ID="{f27b012d-c054-4006-b1ff-0c734770a85c}" DisplayName="SimpleTextColumnReadOnly" Required="FALSE" Name="SimpleTextColumnReadOnly" ReadOnly="TRUE" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

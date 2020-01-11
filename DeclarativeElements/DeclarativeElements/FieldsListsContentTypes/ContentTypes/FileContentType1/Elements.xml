@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Typ zawartości elementu nadrzędnego: Dokument (0x0101) -->
+  <ContentType ID="0x010100DACE9BC450014EB893BF95D995AF8CC9" Name="File Content Type 1" Group="TestContentType" Description="File Content Type 1" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{217a2768-2b5e-4c04-835f-80bd1ba3a150}" DisplayName="SimpleTextColumn1" Required="FALSE" Name="SimpleTextColumn1" />
+      <FieldRef ID="{a4e8b7c3-3565-4f0b-baaf-78713981a26e}" DisplayName="SimpleNoteColumn1" Required="FALSE" Name="SimpleNoteColumn1" />
+      <FieldRef ID="{f61c8125-58bd-475a-bf22-9b509b058a3e}" DisplayName="SimpleCalculatedColumns1" Name="SimpleCalculatedColumns1" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

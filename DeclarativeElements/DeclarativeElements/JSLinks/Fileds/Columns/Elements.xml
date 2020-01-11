@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{8e0cb424-be77-48b9-9bf5-8689bb5f6b98}"
+       Name="SomeTextColumnWithJsLinkAttched"
+       DisplayName="ReadOnlyColumn"
+       Type="Text"
+       JSLink="~sitecollection/Style Library/Javascript/JsLink1.js"
+       Required="FALSE"
+       Group="JsLinkExampleColumns">
+  </Field>
+  <Field
+       ID="{cde77646-6df4-4b2f-9933-31459ce9cad2}"
+       Name="SomeTextColumn1"
+       DisplayName="Some Text Column 1"
+       Type="Text"
+       Required="FALSE"
+       Group="JsLinkExampleColumns">
+  </Field>
+</Elements>

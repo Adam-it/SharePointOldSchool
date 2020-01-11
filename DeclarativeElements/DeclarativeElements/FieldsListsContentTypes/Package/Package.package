@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="21d5b6fc-582e-4184-9e5f-85bde5be12d9" solutionId="21d5b6fc-582e-4184-9e5f-85bde5be12d9" resetWebServer="false" sharePointProductVersion="16.0" name="FieldsListsContentTypes" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="a274edce-f904-419f-8c1d-cdb9be92ddc9" />
+  </features>
+</package>

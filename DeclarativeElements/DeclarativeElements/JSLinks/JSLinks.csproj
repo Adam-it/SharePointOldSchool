@@ -1,0 +1,104 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A8C49337-97F4-4707-B8FC-044C9921DE58}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JSLinks</RootNamespace>
+    <AssemblyName>JSLinks</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetOfficeVersion>16.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>14.0</MinimumOfficeToolsVersion>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ContentTypes\ElementContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{349a5a93-899d-42ff-a3f4-b9b1ec46c75d}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\JSLinks\JSLinks.feature">
+      <FeatureId>{cfd05041-355d-48b6-a2e8-b16d0440d9c5}</FeatureId>
+    </None>
+    <None Include="Fileds\Columns\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9e86b1c6-fdd4-4f88-8586-0ef053c3a0ff}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="ListAndLibs\ExampleListForJSLink\ExampleListForJSLinkInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{85416a11-4d59-46fe-8462-89fcfe897568}</SharePointProjectItemId>
+    </None>
+    <None Include="ListAndLibs\ExampleListForJSLink\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{86887a5d-95fe-4dd6-80b9-9f4d1b2a44c6}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{269bd363-c852-41e8-9683-359a93da9b52}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="StyleLibrary\Javascript\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f882bc83-1cb6-43a4-9a73-770356c21b7e}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="ContentTypes\ElementContentType\Elements.xml" />
+    <Content Include="Features\JSLinks\JSLinks.Template.xml">
+      <DependentUpon>JSLinks.feature</DependentUpon>
+    </Content>
+    <Content Include="Fileds\Columns\Elements.xml" />
+    <Content Include="ListAndLibs\ExampleListForJSLink\Elements.xml" />
+    <Content Include="ListAndLibs\ExampleListForJSLink\ExampleListForJSLinkInstance\Elements.xml" />
+    <Content Include="ListAndLibs\ExampleListForJSLink\Schema.xml" />
+    <Content Include="StyleLibrary\Javascript\Elements.xml" />
+    <Content Include="StyleLibrary\Javascript\JsLink1.js" />
+    <Content Include="StyleLibrary\Javascript\JsLink2.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>
