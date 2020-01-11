@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Typ zawartości elementu nadrzędnego: Element (0x01) -->
+  <ContentType ID="0x0100314AD464E8E34494AA550F6C14224E1D" Name="ElementContentTypeWithJSLinkAttched" JSLink="~sitecollection/Style Library/Javascript/JsLink2.js" Group="Niestandardowe typy zawartości" Description="example CT that has attached JsLink file" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{cde77646-6df4-4b2f-9933-31459ce9cad2}" DisplayName="Some Text Column 1" Required="FALSE" Name="SomeTextColumn1" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

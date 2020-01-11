@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{CBF7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomFieldType", "CustomFieldType\CustomFieldType.csproj", "{2FBDE1B9-6A93-429D-A74C-DDBEA1E7667B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSLinks", "JSLinks\JSLinks.csproj", "{A8C49337-97F4-4707-B8FC-044C9921DE58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,12 @@ Global
 		{2FBDE1B9-6A93-429D-A74C-DDBEA1E7667B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FBDE1B9-6A93-429D-A74C-DDBEA1E7667B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2FBDE1B9-6A93-429D-A74C-DDBEA1E7667B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A8C49337-97F4-4707-B8FC-044C9921DE58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8C49337-97F4-4707-B8FC-044C9921DE58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8C49337-97F4-4707-B8FC-044C9921DE58}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A8C49337-97F4-4707-B8FC-044C9921DE58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8C49337-97F4-4707-B8FC-044C9921DE58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8C49337-97F4-4707-B8FC-044C9921DE58}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

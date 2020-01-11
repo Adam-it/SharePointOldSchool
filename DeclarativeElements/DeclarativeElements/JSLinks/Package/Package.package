@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="269bd363-c852-41e8-9683-359a93da9b52" solutionId="269bd363-c852-41e8-9683-359a93da9b52" resetWebServer="false" sharePointProductVersion="16.0" name="JSLinks" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="cfd05041-355d-48b6-a2e8-b16d0440d9c5" />
+  </features>
+</package>
