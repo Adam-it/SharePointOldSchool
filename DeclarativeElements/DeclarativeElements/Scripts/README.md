@@ -1,2 +1,1 @@
-# SharePointOldSchool
-repo for many different SharePoint project types used in 2010/2013/2016
+- GetListViewSchemaXml.ps1 - this script may be helpful to get schema xml of view from a list that was created manually
