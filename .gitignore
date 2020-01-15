@@ -1,4 +1,5 @@
 .vs/
+*.user
 DeclarativeElements/DeclarativeElements/FieldsListsContentTypes/Properties
 DeclarativeElements/DeclarativeElements/FieldsListsContentTypes/bin
 DeclarativeElements/DeclarativeElements/FieldsListsContentTypes/obj
