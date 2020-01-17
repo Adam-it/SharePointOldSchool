@@ -1,0 +1,1 @@
+- CreateList.ps1 - this script may be helpful to create a simple custom list on some web

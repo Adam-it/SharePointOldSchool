@@ -11,7 +11,7 @@ This project adds custom filed (column) to SharePoint. This kind of column may b
 ## Example
 
 When adding column to list new column is visible as one of the options
-![Create Column](../../../Images/CustomFieldTypeScreen3.png)
+![](../../../Images/CustomFieldTypeScreen3.png)
 
 When no value is provided then the field is populated with default value
 <pre>
@@ -20,7 +20,7 @@ if (this.ControlMode == SPControlMode.New)
     textBox.Text = "some sample text";
 }
 </pre>
-![Create Column](../../../Images/CustomFieldTypeScreen2.png)
+![](../../../Images/CustomFieldTypeScreen2.png)
 
 The field has custom validation 
-![Create Column](../../../Images/CustomFieldTypeScreen1.png)
+![](../../../Images/CustomFieldTypeScreen1.png)
