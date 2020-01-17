@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers ListUrl="Lists/ListWithEventReceiver">
+      <Receiver>
+        <Name>ListEventReceiverItemAdding</Name>
+        <Type>ItemAdding</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>EventReceiver.ListEventReceiver.ListEventReceiver</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>ListEventReceiverItemUpdating</Name>
+        <Type>ItemUpdating</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>EventReceiver.ListEventReceiver.ListEventReceiver</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>ListEventReceiverItemDeleting</Name>
+        <Type>ItemDeleting</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>EventReceiver.ListEventReceiver.ListEventReceiver</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>ListEventReceiverItemAdded</Name>
+        <Type>ItemAdded</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>EventReceiver.ListEventReceiver.ListEventReceiver</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>ListEventReceiverItemUpdated</Name>
+        <Type>ItemUpdated</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>EventReceiver.ListEventReceiver.ListEventReceiver</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>ListEventReceiverItemDeleted</Name>
+        <Type>ItemDeleted</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>EventReceiver.ListEventReceiver.ListEventReceiver</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+  </Receivers>
+</Elements>

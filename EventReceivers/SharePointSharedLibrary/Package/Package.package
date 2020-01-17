@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="b0546b06-eac7-41f8-b9f6-fbc384a09ff6" solutionId="b0546b06-eac7-41f8-b9f6-fbc384a09ff6" resetWebServer="false" sharePointProductVersion="16.0" name="SharePointSharedLibrary" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="SharedLogic.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\SharedLogic\SharedLogic.csproj" />
+  </assemblies>
+</package>
