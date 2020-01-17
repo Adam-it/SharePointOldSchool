@@ -9,13 +9,13 @@ This project adds fields, content types, list and library with declarative xml
 ## Example
 
 list and libs added to site collection
-![Create Column](../../../Images/FieldsListsContentTypesScreen1.png	)
+![](../../../Images/FieldsListsContentTypesScreen1.png	)
 
 columns added to site collection
-![Create Column](../../../Images/FieldsListsContentTypesScreen2.png	)
+![](../../../Images/FieldsListsContentTypesScreen2.png	)
 
 content types added to site collection
-![Create Column](../../../Images/FieldsListsContentTypesScreen3.png	)
+![](../../../Images/FieldsListsContentTypesScreen3.png	)
 
 columns and content types attached to list
-![Create Column](../../../Images/FieldsListsContentTypesScreen4.png	)
+![](../../../Images/FieldsListsContentTypesScreen4.png	)
