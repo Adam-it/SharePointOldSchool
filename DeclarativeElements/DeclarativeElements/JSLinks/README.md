@@ -5,10 +5,10 @@ This project adds list with a field that has attached JsLink file to it. The lis
 ## Example
 
 JsLink1 makes the field readonly in quick edit mode of list
-![Create Column](../../../Images/JsLinkScreen1.png	)
+![](../../../Images/JsLinkScreen1.png	)
 
 JsLink1 makes the field readonly in edit form
-![Create Column](../../../Images/JsLinkScreen2.png	)
+![](../../../Images/JsLinkScreen2.png	)
 
 JsLink2 present when correct content types is selected for the item
-![Create Column](../../../Images/JsLinkScreen3.png	)
+![](../../../Images/JsLinkScreen3.png	)
