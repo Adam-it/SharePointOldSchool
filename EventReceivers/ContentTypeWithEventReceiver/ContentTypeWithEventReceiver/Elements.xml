@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Typ zawartości elementu nadrzędnego: Element (0x01) -->
+  <ContentType ID="0x0100885894CA412E4BDBB6ACAE656E7BF884"
+               Name="ContentTypeWithEventReceiver"
+               Group="CT with Event Receiver"
+               Description="This CT has an attached event receiver"
+               Inherits="FALSE"
+               Version="0">
+    <FieldRefs>
+    </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument
+        NamespaceURI="http://schemas.microsoft.com/sharepoint/events">
+        <Receivers xmlns:spe="http://schemas.microsoft.com/sharepoint/events">
+          <Receiver>
+            <Name>EventReceiverItemAdding</Name>
+            <Type>ItemAdding</Type>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>ContentTypeWithEventReceiver.EventReceiver.EventReceiver</Class>
+            <SequenceNumber>10000</SequenceNumber>
+          </Receiver>
+          <Receiver>
+            <Name>EventReceiverItemUpdating</Name>
+            <Type>ItemUpdating</Type>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>ContentTypeWithEventReceiver.EventReceiver.EventReceiver</Class>
+            <SequenceNumber>10000</SequenceNumber>
+          </Receiver>
+          <Receiver>
+            <Name>EventReceiverItemDeleting</Name>
+            <Type>ItemDeleting</Type>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>ContentTypeWithEventReceiver.EventReceiver.EventReceiver</Class>
+            <SequenceNumber>10000</SequenceNumber>
+          </Receiver>
+          <Receiver>
+            <Name>EventReceiverItemAdded</Name>
+            <Type>ItemAdded</Type>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>ContentTypeWithEventReceiver.EventReceiver.EventReceiver</Class>
+            <SequenceNumber>10000</SequenceNumber>
+          </Receiver>
+          <Receiver>
+            <Name>EventReceiverItemUpdated</Name>
+            <Type>ItemUpdated</Type>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>ContentTypeWithEventReceiver.EventReceiver.EventReceiver</Class>
+            <SequenceNumber>10000</SequenceNumber>
+          </Receiver>
+          <Receiver>
+            <Name>EventReceiverItemDeleted</Name>
+            <Type>ItemDeleted</Type>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>ContentTypeWithEventReceiver.EventReceiver.EventReceiver</Class>
+            <SequenceNumber>10000</SequenceNumber>
+          </Receiver>
+        </Receivers>
+      </XmlDocument>
+    </XmlDocuments>
+  </ContentType>
+</Elements>
