@@ -33,3 +33,8 @@ EventReceivers/ContentTypeWithEventReceiver/bin
 EventReceivers/ContentTypeWithEventReceiver/obj
 EventReceivers/ContentTypeWithEventReceiver/pkg
 EventReceivers/ContentTypeWithEventReceiver/pkgobj
+TimerJob/TimerJob/Properties
+TimerJob/TimerJob/bin
+TimerJob/TimerJob/obj
+TimerJob/TimerJob/pkg
+TimerJob/TimerJob/pkgobj
