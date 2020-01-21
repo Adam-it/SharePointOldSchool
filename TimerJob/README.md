@@ -1,16 +1,16 @@
-## EventReceivers
+## TimerJob
 
-- EventReceiver - this project adds list item event receiver to custom list. Here I also have a global disbale event receiver class to use with using statement
-- ContentTypeWithEventReceiver - this projects adds a content type with attached event receiver. Only elements with this CT will rise an event. Here I use local disable of event receiver with this.EventFiringEnabled = false;
-- SharedLogic - this project has helper classes that may be shared between projects
-- SharePointSharedLibrary - is to include and deploy SharedLogic c# library to GAC
+- TimerJob - this project adds custom timer job to web application that runs every hour and adds some items to list on sitecollections from this web application that have a defined property bag set on web
 - Scripts - store helper PS1 scripts
 
 ## Example
 
-When some validation is not met then the event receiver cancels deletion of item
-![](../Images/EventRecieverScreen1.png	)
+feature on web application level that adds timer job on active and removes on deactive
+![](../Images/TimerJobScreen2.png	)
 
-How some of the events are logged in a custom list by the event receiver
-![](../Images/EventRecieverScreen2.png	)
+timer job defenition in CA
+![](../Images/TimerJobScreen1.png	)
+
+result of the timer job - items added to list
+![](../Images/TimerJobScreen3.png	)
 
