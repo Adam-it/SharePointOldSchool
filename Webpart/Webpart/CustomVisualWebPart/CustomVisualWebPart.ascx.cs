@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Text;
 using System.Web.UI.WebControls.WebParts;
 using static Webpart.Mapping;
+using static Webpart.Helper.UserHelper;
 
 namespace Webpart.CustomVisualWebPart
 {
@@ -21,6 +22,20 @@ namespace Webpart.CustomVisualWebPart
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!this.Page.IsPostBack)
+            {
+                SPUser user = SPContext.Current.Web.CurrentUser;
+                LbUserData.Text = new StringBuilder()
+                    .Append("LoginName: ")
+                    .Append(user.LoginName)
+                    .Append(" IsSiteAdmin: ")
+                    .Append(user.IsSiteAdmin)
+                    .ToString();
+
+                LbUserGroups.Text = user.GetUserGroups();
+
+                LbUserProperties.Text = user.GetUserProfileProperties(SPContext.Current);
+            }
         }
 
         protected void BtnGetItemFirstMethod_Click(object sender, EventArgs e)

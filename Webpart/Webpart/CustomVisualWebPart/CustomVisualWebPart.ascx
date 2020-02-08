@@ -8,6 +8,18 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="CustomVisualWebPart.ascx.cs" Inherits="Webpart.CustomVisualWebPart.CustomVisualWebPart" %>
 
 <div>
+    <asp:Label ID="LbStaticText_userData" runat="server" Text="userData: "></asp:Label>
+    <asp:Label ID="LbUserData" runat="server" Text=""></asp:Label>
+    <br />
+
+    <asp:Label ID="LbStaticText_userGroups" runat="server" Text="userGroups: "></asp:Label>
+    <asp:Label ID="LbUserGroups" runat="server" Text=""></asp:Label>
+    <br />
+
+    <asp:Label ID="LbStaticText_userProperties" runat="server" Text="userProperties: "></asp:Label>
+    <asp:Label ID="LbUserProperties" runat="server" Text=""></asp:Label>
+    <br />
+
     <asp:Label ID="LbStaticText_Time" runat="server" Text="Time: "></asp:Label><asp:Label ID="LbTime" runat="server" Text=""></asp:Label>
     <br />
 

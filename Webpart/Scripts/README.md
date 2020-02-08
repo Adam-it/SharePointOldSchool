@@ -1,0 +1,2 @@
+- CreateListAndAddItems.ps1 - this script may be helpful to create a simple custom list on some web and populate it with items
+- TurnOnDeveloperdashboard.ps1 - this script may be helpful to turn on developer dashboard
