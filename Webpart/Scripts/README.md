@@ -1,2 +1,3 @@
 - CreateListAndAddItems.ps1 - this script may be helpful to create a simple custom list on some web and populate it with items
 - TurnOnDeveloperdashboard.ps1 - this script may be helpful to turn on developer dashboard
+- GetSpecifiedItemsSupportScript.ps1 - this script creates a list with specified column in hashtable (all columns are indexed) and populates it with 5300 test items
