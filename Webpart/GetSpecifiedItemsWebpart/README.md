@@ -7,8 +7,8 @@ The sample webpart uses standard caching approach to retrieve items from list us
 ## Example
 
 powershell script execution
-![](../../../Images/GetSpecifiedItems1.png	)
+![](../../Images/GetSpecifiedItems1.png	)
 
 webpart result that retrieves 100 items from list of 5300 items (less then 1s response)
-![](../../../Images/GetSpecifiedItems2.png	)
+![](../../Images/GetSpecifiedItems2.png	)
 
