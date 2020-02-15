@@ -8,8 +8,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{1A8163A6-2762-43DE-A864-6BEAFC27827D}"
 	ProjectSection(SolutionItems) = preProject
 		Scripts\CreateListAndAddItems.ps1 = Scripts\CreateListAndAddItems.ps1
+		Scripts\GetSpecifiedItemsSupportScript.ps1 = Scripts\GetSpecifiedItemsSupportScript.ps1
 		Scripts\TurnOnDeveloperdashboard.ps1 = Scripts\TurnOnDeveloperdashboard.ps1
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetSpecifiedItems", "GetSpecifiedItemsWebpart\GetSpecifiedItems.csproj", "{2AB4C723-E82C-4D78-809D-C25F81F9CFD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +26,12 @@ Global
 		{3186A970-21A9-45B9-A703-16A684C77DDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3186A970-21A9-45B9-A703-16A684C77DDF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3186A970-21A9-45B9-A703-16A684C77DDF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2AB4C723-E82C-4D78-809D-C25F81F9CFD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AB4C723-E82C-4D78-809D-C25F81F9CFD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AB4C723-E82C-4D78-809D-C25F81F9CFD6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2AB4C723-E82C-4D78-809D-C25F81F9CFD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AB4C723-E82C-4D78-809D-C25F81F9CFD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AB4C723-E82C-4D78-809D-C25F81F9CFD6}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
