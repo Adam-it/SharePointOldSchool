@@ -7,6 +7,9 @@
 <%@ import namespace="Microsoft.SharePoint.ApplicationPages" %>
 <%@ register tagprefix="WebPartPages" namespace="Microsoft.SharePoint.WebPartPages" assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ register tagprefix="wssuc" tagname="Welcome" src="~/_controltemplates/15/Welcome.ascx" %>
+<%@ Register TagPrefix="UserControl1" TagName="CustomControl" Src="~/_controltemplates/15/Components/ExampleUserControl.ascx" %>
+<%@ Register TagPrefix="WpNs0" Namespace="Components.Webpart.ExampleVisualWebPart" Assembly="Components, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fb675835662a8630"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <sharepoint:sphtmltag dir="<%$Resources:wss,multipages_direction_dir_value%>" id="SPHtmlTag" runat="server">
@@ -38,6 +41,9 @@
 		<asp:ContentPlaceHolder id="PlaceHolderBodyAreaClass" Visible="true" runat="server" />
 	</SharePoint:AjaxDelta>
 	<SharePoint:CssRegistration Name="Themable/corev15.css" runat="server" />
+
+    <SharePoint:ScriptLink language="javascript" name="SCRIPTS/MasterPageComponents/CustomJS.js" Defer="true" runat="server" />
+
 </head>
 <body>
   <SharePoint:ImageLink runat="server"/>
@@ -309,6 +315,8 @@
             <%-- custom content added --%>
             <div class="CustomMasterPageDiv">
                 <h1 style="color:red;">Some Custom HTML added</h1>
+                <WpNs0:ExampleVisualWebPart runat="server" Description="" ImportErrorMessage="" Title="ExampleVisualWebPart" ID="g_c77d61ab_aab9_4e16_8939_6fb73be3e08d" __MarkupType="vsattributemarkup" __WebPartId="{C77D61AB-AAB9-4E16-8939-6FB73BE3E08D}" WebPart="true" __designer:IsClosed="false" partorder="2"></WpNs0:ExampleVisualWebPart>
+                <UserControl1:CustomControl runat="server" id="ExampleUserControl" />  
             </div>
             <%-- -------------------- --%>
 		<div id="s4-titlerow"
