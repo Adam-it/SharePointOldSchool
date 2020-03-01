@@ -58,3 +58,13 @@ MasterPage/Components/bin
 MasterPage/Components/obj
 MasterPage/Components/pkg
 MasterPage/Components/pkgobj
+CustomRibbonAndApplicationPage/ApplicationPage/Properties
+CustomRibbonAndApplicationPage/ApplicationPage/bin
+CustomRibbonAndApplicationPage/ApplicationPage/obj
+CustomRibbonAndApplicationPage/ApplicationPage/pkg
+CustomRibbonAndApplicationPage/ApplicationPage/pkgobj
+CustomRibbonAndApplicationPage/CustomRibbon/Properties
+CustomRibbonAndApplicationPage/CustomRibbon/bin
+CustomRibbonAndApplicationPage/CustomRibbon/obj
+CustomRibbonAndApplicationPage/CustomRibbon/pkg
+CustomRibbonAndApplicationPage/CustomRibbon/pkgobj
