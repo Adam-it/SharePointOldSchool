@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  
+  <!-- add custom button to existing tab and group -->
+  <CustomAction Id="AddCustomButtonToGroup" Sequence="999"
+                Location="CommandUI.Ribbon" 
+                RegistrationId="0x01008E4589A8AF9E4D8E9937FFD8327E9BC0" 
+                RegistrationType="ContentType"
+                Title="Custom Button added to all lists">
+  <CommandUIExtension>
+    <CommandUIDefinitions>
+      <CommandUIDefinition Location="Ribbon.ListItem.Manage.Controls._children">
+        <Button Id="CustomRibbonButton1" TemplateAlias="o1"
+                ToolTipDescription="Some description "
+                LabelText="Custom Button 1"
+                Image32by32="/_layouts/15/1045/images/customImages/SomeIcon.png"
+                Command="{3E04C0C1-12DD-449E-905F-7E88EB9E22B1}"
+                Sequence="20"/>
+      </CommandUIDefinition>
+    </CommandUIDefinitions>
+    <CommandUIHandlers>
+      <CommandUIHandler Command="{3E04C0C1-12DD-449E-905F-7E88EB9E22B1}"
+                        CommandAction="javascript:CustromRibbonMethod1();" />
+    </CommandUIHandlers>
+  </CommandUIExtension>
+  </CustomAction>
+ 
+  <!-- remove ootb tab -->
+  <CustomAction
+    Id="RemoveRibbonListItemActionsGroup"
+    Location="CommandUI.Ribbon"
+    RegistrationType="ContentType"
+    RegistrationId="0x01008E4589A8AF9E4D8E9937FFD8327E9BC0">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+              <CommandUIDefinition
+                Location="Ribbon.ListItem.Actions" />
+      </CommandUIDefinitions>
+    </CommandUIExtension>
+  </CustomAction>   
+ 
+  <!-- remove ootb group -->
+  <CustomAction
+    Id="RemoveRibbonListTab"
+    Location="CommandUI.Ribbon"
+    RegistrationType="ContentType"
+    RegistrationId="0x01008E4589A8AF9E4D8E9937FFD8327E9BC0">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+              <CommandUIDefinition
+                Location="Ribbon.List" />
+      </CommandUIDefinitions>
+    </CommandUIExtension>
+  </CustomAction>
+
+  <!--Add custom tab group adn buttons-->
+  <CustomAction
+    Id="AddCustomButtonToSection"
+    Location="CommandUI.Ribbon.ListView"
+    RegistrationType="ContentType"
+    RegistrationId="0x01008E4589A8AF9E4D8E9937FFD8327E9BC0">
+      <CommandUIExtension>
+        <CommandUIDefinitions>
+          <CommandUIDefinition
+            Location="Ribbon.Tabs._children">
+            <Tab 
+              Id="Ribbon.CustomTab" 
+              Title="Custom Tab" 
+              Description="Custom tab description" 
+              Sequence="501">
+            <Scaling
+              Id="Ribbon.CustomTab.Scaling">
+              <MaxSize
+                Id="Ribbon.CustomTab.MaxSize" 
+                GroupId="Ribbon.CustomTab.CustomGroup" 
+                Size="OneLargeTwoMedium"/>
+              <Scale 
+                Id="Ribbon.CustomTab.Scaling.CustomTabScaling"
+                GroupId="Ribbon.CustomTab.CustomGroup" 
+                Size="OneLargeTwoMedium" />
+            </Scaling>
+            <Groups Id="Ribbon.CustomTab.Groups">
+              <Group 
+                Id="Ribbon.CustomTab.CustomGroup" 
+                Description="This is a custom group" 
+                Title="Custom Group" 
+                Sequence="52" 
+                Template="Ribbon.Templates.CustomTemplateExample">
+                <Controls Id="Ribbon.CustomTab.CustomGroup.Controls">
+                  <Button 
+                    Id="Ribbon.CustomTab.CustomGroup.Button1" 
+                    Command="CustomTab.Command1" 
+                    Sequence="15" 
+                    Description="Command1" 
+                    LabelText="Command1" 
+                    TemplateAlias="cust1"/>
+                  <Button 
+                    Id="Ribbon.CustomTab.CustomGroup.Button2" 
+                    Command="CustomTab.Command2" 
+                    Sequence="17" 
+                    Description="Command2" 
+                    LabelText="Command2" 
+                    TemplateAlias="cust2"/>
+                </Controls>
+              </Group>
+            </Groups>
+          </Tab>
+        </CommandUIDefinition>
+        <CommandUIDefinition Location="Ribbon.Templates._children">
+          <GroupTemplate Id="Ribbon.Templates.CustomTemplateExample">
+            <Layout 
+              Title="OneLargeTwoMedium" 
+              LayoutTitle="TwoLarge">
+              <Section Alignment="Top" Type="OneRow">
+                <Row>
+                  <ControlRef DisplayMode="Large" TemplateAlias="cust1" />
+                </Row>
+              </Section>
+              <Section Alignment="Top" Type="OneRow">
+                <Row>
+                  <ControlRef DisplayMode="Medium" TemplateAlias="cust2" />
+                </Row>
+              </Section>
+            </Layout>
+          </GroupTemplate>
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler
+          Command="CustomTab.Command1" 
+          CommandAction="javascript:CustromRibbonMethod2();" />
+        <CommandUIHandler 
+          Command="CustomTab.Command2" 
+          CommandAction="javascript:CustromRibbonMethod3();" />
+      </CommandUIHandlers>
+    </CommandUIExtension>
+  </CustomAction>
+
+</Elements>

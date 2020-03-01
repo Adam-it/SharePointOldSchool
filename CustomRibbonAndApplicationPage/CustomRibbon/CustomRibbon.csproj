@@ -1,0 +1,114 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9D877B65-E710-4280-98F8-41B93DA88A86}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CustomRibbon</RootNamespace>
+    <AssemblyName>CustomRibbon</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetOfficeVersion>16.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>14.0</MinimumOfficeToolsVersion>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\CustomRibbon\CustomRibbon.feature">
+      <FeatureId>{2147b514-822c-4e94-8eac-a2d2359137a3}</FeatureId>
+    </None>
+    <None Include="JavaScript\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{25394ba4-eabc-4ab9-942e-31523a3b8ee2}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="MasterPage\CustomRibbonMasterPage.master" />
+    <None Include="MasterPage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7be78570-525d-4f6f-baf3-3c41e27844eb}</SharePointProjectItemId>
+    </None>
+    <None Include="Ribbon\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fa416974-48e4-4892-816e-b6cde9611077}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{a04115c9-e4b6-41e9-a835-b0931308258a}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Provision\ContentType\ContentTypeWithCustomRibbonOption\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9eccbfe5-af2c-401a-8bc5-30ec2388c94d}</SharePointProjectItemId>
+    </None>
+    <None Include="Provision\List\ListWithCustomRibbon\ListWithCustomRibbonInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9a2fbdaf-0da8-450d-8635-7b92b02e6a2e}</SharePointProjectItemId>
+    </None>
+    <None Include="Provision\List\ListWithCustomRibbon\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f0cfde46-5ff7-4f16-9a0f-bfeeab3adeab}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Features\CustomRibbon\CustomRibbon.Template.xml">
+      <DependentUpon>CustomRibbon.feature</DependentUpon>
+    </Content>
+    <Content Include="JavaScript\CustomJS.js" />
+    <Content Include="JavaScript\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="MasterPage\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Ribbon\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Provision\ContentType\ContentTypeWithCustomRibbonOption\Elements.xml" />
+    <Content Include="Provision\List\ListWithCustomRibbon\Elements.xml" />
+    <Content Include="Provision\List\ListWithCustomRibbon\ListWithCustomRibbonInstance\Elements.xml" />
+    <Content Include="Provision\List\ListWithCustomRibbon\Schema.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

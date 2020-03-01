@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Typ zawartości elementu nadrzędnego: Element (0x01) -->
+  <ContentType ID="0x01008E4589A8AF9E4D8E9937FFD8327E9BC0" Name="ContentTypeWithCustomRibbonOption" Group="Niestandardowe typy zawartości" Description="this content type has custom ribbon option" Inherits="TRUE" Version="0">
+    <FieldRefs></FieldRefs>
+  </ContentType>
+</Elements>
