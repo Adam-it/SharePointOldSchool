@@ -73,3 +73,11 @@ CSOMApp/CSOMApp/obj
 CSOMApp/CSOMApp/pkg
 CSOMApp/CSOMApp/pkgobj
 /CSOMApp/packages/Microsoft.SharePoint2016.CSOM.16.0.4690.1000
+ClientSideProject/ISAPI/bin
+ClientSideProject/ISAPI/obj
+ClientSideProject/ISAPI/pkg
+ClientSideProject/ISAPI/pkgobj
+ClientSideProject/FrontEnd/bin
+ClientSideProject/FrontEnd/obj
+ClientSideProject/FrontEnd/pkg
+ClientSideProject/FrontEnd/pkgobj
