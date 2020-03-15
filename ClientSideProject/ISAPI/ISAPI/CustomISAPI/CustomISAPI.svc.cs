@@ -58,7 +58,7 @@ namespace ISAPI.ISAPI.CustomISAPI
 
         /// <summary>
         /// returns all items from list
-        /// https://testowy.local.umed.pl/sites/AdamTest/_vti_bin/CustomISAPI/CustomISAPI.svc/GetListItems
+        /// https://server/sites/AdamTest/_vti_bin/CustomISAPI/CustomISAPI.svc/GetListItems
         /// </summary>
         /// <param name="listName"></param>
         /// <returns></returns>
@@ -95,7 +95,7 @@ namespace ISAPI.ISAPI.CustomISAPI
         }
 
         /// <summary>
-        /// https://testowy.local.umed.pl/sites/AdamTest/_vti_bin/CustomISAPI/CustomISAPI.svc/TestCustomISAPI
+        /// https://server/sites/AdamTest/_vti_bin/CustomISAPI/CustomISAPI.svc/TestCustomISAPI
         /// </summary>
         /// <returns></returns>
         public string TestCustomISAPI() =>
