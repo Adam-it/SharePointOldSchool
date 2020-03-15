@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Javascript" Url="Style Library">
+    <File Path="Javascript\customJS.js" Url="Javascript/customJS.js" Type="GhostableInLibrary"/>
+    <File Path="Javascript\helpers.js" Url="Javascript/helpers.js" Type="GhostableInLibrary"/>
+    <File Path="Javascript\data.js" Url="Javascript/data.js" Type="GhostableInLibrary"/>
+    <File Path="Javascript\HTMLHelpers.js" Url="Javascript/HTMLHelpers.js" Type="GhostableInLibrary"/>
+  </Module>
+</Elements>

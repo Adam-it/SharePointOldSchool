@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="f056d563-fe78-4be7-9bfa-25310f5a86ea" solutionId="f056d563-fe78-4be7-9bfa-25310f5a86ea" resetWebServer="false" sharePointProductVersion="16.0" name="ISAPI" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <projectItems>
+    <projectItemReference itemId="2f99af64-3621-4217-8d34-6246c2e12b4c" />
+  </projectItems>
+</package>

@@ -1,0 +1,3 @@
+﻿var data = {
+    ListName: "CustomClientSideList"
+};

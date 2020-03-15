@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Javascript\" Type="ElementManifest" />
+    <ProjectItemFile Source="customJS.js" Target="Javascript\" Type="ElementFile" />
+    <ProjectItemFile Source="helpers.js" Target="Javascript\" Type="ElementFile" />
+    <ProjectItemFile Source="data.js" Target="Javascript\" Type="ElementFile" />
+    <ProjectItemFile Source="HTMLHelpers.js" Target="Javascript\" Type="ElementFile" />
+  </Files>
+</ProjectItem>
