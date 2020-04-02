@@ -10,8 +10,11 @@ This solution contains two projects:
 #### MSDN 
 
 MSDN resource helpful to understand the used technology
+
 https://docs.microsoft.com/en-us/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint
+
 https://docs.microsoft.com/en-us/visualstudio/sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part?view=vs-2019
+
 https://docs.microsoft.com/en-us/visualstudio/sharepoint/creating-web-parts-for-sharepoint?view=vs-2019
 
 ---
