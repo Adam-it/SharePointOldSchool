@@ -1,14 +1,14 @@
 # SharePointOldSchool
 
 ### What is this repo for
+
 In this repo I gather many different project types or other solutions that may be used in SharePoint 2010/2013/2016
-I treat this repo as a personal notes to which I get back to when I want to quickly start some project based on some example.
-___
-... BE AWARE - this repo is still under construction and I have a list of projects and solutions I want to cover in it, it's just a matter of time. 
-___
+I treat this repo as personal notes to which I get back to when I want to quickly start some project based on some example.
+This repo contains a perfect set of many farm and sandbox solutions (apps (add-ins) will be stored in different repo) that may be used to implement many different and powerful customizations of SharePoint and also extended SharePoint OOTB functionalities
+
 ### Notes
 
-Projects were developed with SP 2016
+Projects were developed and tested on SharePoint 2016
 
 ### License 
 
