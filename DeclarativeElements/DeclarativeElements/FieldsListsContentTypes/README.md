@@ -1,12 +1,18 @@
 ## FieldsListsContentTypes
 
+#### Description
+
 This project adds fields, content types, list and library with declarative xml
 
-## MSDN
+----
+#### MSDN 
 
-[Link to docs](https://docs.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/gg615463(v%3Doffice.14))
+MSDN resource helpful to understand the used technology
 
-## Example
+https://docs.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/gg615463(v%3Doffice.14)
+
+---
+#### Example
 
 list and libs added to site collection
 ![](../../../Images/FieldsListsContentTypesScreen1.png	)
