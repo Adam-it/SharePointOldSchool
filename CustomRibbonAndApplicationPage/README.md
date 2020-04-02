@@ -17,8 +17,11 @@ Finally this solution modifies Ribbon for a specified content type added to a li
 #### MSDN 
 
 MSDN resource helpful to understand the used technology
+
 https://docs.microsoft.com/en-us/visualstudio/sharepoint/creating-application-pages-for-sharepoint?view=vs-2019
+
 https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/add-a-custom-ribbon-to-your-sharepoint-site
+
 https://docs.microsoft.com/en-us/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint
 
 ---
