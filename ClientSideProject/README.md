@@ -23,5 +23,5 @@ https://docs.microsoft.com/en-us/sharepoint/dev/general-development/overview-of-
 ---
 #### Example
 
-example of the solution to user REST, JOSM and custom ISAPI to get list items and add item to list
+example of the solution user may use REST, JOSM and custom ISAPI to get list items and add item to list
 ![](../Images/ClientSideProjectScreen1.png	)
