@@ -17,7 +17,9 @@ This kind of SharePoint application approach is perfect for dev team that splits
 MSDN resource helpful to understand the used technology
 
 https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/complete-basic-operations-using-javascript-library-code-in-sharepoint
+
 https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-rest-endpoints
+
 https://docs.microsoft.com/en-us/sharepoint/dev/general-development/overview-of-the-sharepoint-page-model
 
 ---
