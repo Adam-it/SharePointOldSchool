@@ -1,6 +1,6 @@
 ## CSOMApp
 
-- CSOMApp - console application that uses CSOM to:
+CSOMApp - console application that uses CSOM to:
 - query list items with a paginated way in order to avoid threshold problems
 - add list
 - add, remove, edit list item
