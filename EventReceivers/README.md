@@ -12,6 +12,7 @@ This solution contains 4 projects:
 #### MSDN 
 
 MSDN resource helpful to understand the used technology
+
 https://docs.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ff408183(v%3Doffice.14)
 
 ---
