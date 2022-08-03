@@ -1,3 +1,5 @@
+## ⚠️Due to lack of time this repo is not maintained anymore 😢 I am keeping it for historical reasons 
+
 # SharePointOldSchool
 
 ### What is this repo for
